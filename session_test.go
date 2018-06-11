@@ -31,5 +31,6 @@ func TestSession(t *testing.T) {
 	var s *DefaultSession
 	assert.Empty(t, s.GetSubject())
 	assert.Empty(t, s.GetUsername())
+	assert.Empty(t, s.GetEmail())
 	assert.Nil(t, s.Clone())
 }

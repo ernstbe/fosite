@@ -52,6 +52,7 @@ type DefaultSession struct {
 	ExpiresAt map[fosite.TokenType]time.Time
 	Username  string
 	Subject   string
+	Email     string
 }
 
 func NewDefaultSession() *DefaultSession {
@@ -102,6 +103,13 @@ func (s *DefaultSession) GetSubject() string {
 	}
 
 	return s.Subject
+}
+
+func (s *DefaultSession) GetEmail() string {
+	if s == nil {
+		return ""
+	}
+	return s.Email
 }
 
 func (s *DefaultSession) IDTokenHeaders() *jwt.Headers {

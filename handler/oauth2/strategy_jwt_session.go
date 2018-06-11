@@ -46,6 +46,7 @@ type JWTSession struct {
 	ExpiresAt map[fosite.TokenType]time.Time
 	Username  string
 	Subject   string
+	Email     string
 }
 
 func (j *JWTSession) GetJWTClaims() *jwt.JWTClaims {
@@ -93,6 +94,13 @@ func (s *JWTSession) GetSubject() string {
 	}
 
 	return s.Subject
+}
+
+func (s *JWTSession) GetEmail() string {
+	if s == nil {
+		return ""
+	}
+	return s.Email
 }
 
 func (s *JWTSession) Clone() fosite.Session {

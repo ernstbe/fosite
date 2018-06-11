@@ -46,6 +46,9 @@ type Session interface {
 	// GetSubject returns the subject, if set. This is optional and only used during token introspection.
 	GetSubject() string
 
+	// GetEmail returns the usermail, if set.
+	GetEmail() string
+
 	// Clone clones the session.
 	Clone() Session
 }
@@ -55,6 +58,7 @@ type DefaultSession struct {
 	ExpiresAt map[TokenType]time.Time
 	Username  string
 	Subject   string
+	Email     string
 }
 
 func (s *DefaultSession) SetExpiresAt(key TokenType, exp time.Time) {
@@ -88,6 +92,13 @@ func (s *DefaultSession) GetSubject() string {
 	}
 
 	return s.Subject
+}
+
+func (s *DefaultSession) GetEmail() string {
+	if s == nil {
+		return ""
+	}
+	return s.Email
 }
 
 func (s *DefaultSession) Clone() Session {
