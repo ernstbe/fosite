@@ -27,8 +27,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ory/fosite"
-	enigma "github.com/ory/fosite/token/hmac"
+	"github.com/ernstbe/fosite"
+	enigma "github.com/ernstbe/fosite/token/hmac"
 	"github.com/pkg/errors"
 )
 

@@ -28,9 +28,9 @@ import (
 
 	"fmt"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/handler/oauth2"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/compose"
+	"github.com/ernstbe/fosite/handler/oauth2"
 	"github.com/parnurzeal/gorequest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

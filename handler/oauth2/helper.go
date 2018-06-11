@@ -26,7 +26,7 @@ import (
 
 	"context"
 
-	"github.com/ory/fosite"
+	"github.com/ernstbe/fosite"
 )
 
 type HandleHelper struct {

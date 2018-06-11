@@ -36,10 +36,10 @@ import (
 
 	"fmt"
 
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/handler/openid"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/ernstbe/fosite/compose"
+	"github.com/ernstbe/fosite/handler/openid"
+	"github.com/ernstbe/fosite/internal"
+	"github.com/ernstbe/fosite/token/jwt"
 )
 
 func TestOIDCImplicitFlow(t *testing.T) {

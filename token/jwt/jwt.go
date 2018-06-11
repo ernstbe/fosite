@@ -31,7 +31,7 @@ import (
 	"strings"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/ory/fosite"
+	"github.com/ernstbe/fosite"
 	"github.com/pkg/errors"
 )
 

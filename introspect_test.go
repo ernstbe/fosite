@@ -30,10 +30,10 @@ import (
 	"fmt"
 
 	"github.com/golang/mock/gomock"
-	. "github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/storage"
+	. "github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/compose"
+	"github.com/ernstbe/fosite/internal"
+	"github.com/ernstbe/fosite/storage"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

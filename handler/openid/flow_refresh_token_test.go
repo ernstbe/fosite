@@ -24,8 +24,8 @@ package openid
 import (
 	"testing"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/token/jwt"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -27,8 +27,8 @@ import (
 	"fmt"
 
 	"github.com/golang/mock/gomock"
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/internal"
 	"github.com/stretchr/testify/require"
 )
 

@@ -82,19 +82,19 @@ if an authorization code is used more than one time.
 
 ### JWT Claims
 
-- `github.com/ory/fosite/token/jwt.JWTClaims.Audience` is no longer a `string`, but a string slice `[]string`.
-- `github.com/ory/fosite/handler/openid.IDTokenClaims` is no longer a `string`, but a string slice `[]string`.
+- `github.com/ernstbe/fosite/token/jwt.JWTClaims.Audience` is no longer a `string`, but a string slice `[]string`.
+- `github.com/ernstbe/fosite/handler/openid.IDTokenClaims` is no longer a `string`, but a string slice `[]string`.
 
 ### `AuthorizeCodeStorage`
 
 This improves security as, in the event of an authorization code being leaked, all associated tokens are revoked. To
-implement this feature, a breaking change had to be introduced. The `github.com/ory/fosite/handler/oauth2.AuthorizeCodeStorage`
+implement this feature, a breaking change had to be introduced. The `github.com/ernstbe/fosite/handler/oauth2.AuthorizeCodeStorage`
 interface changed as follows:
 
 - `DeleteAuthorizeCodeSession(ctx context.Context, code string) (err error)` has been removed from the interface and
 is no longer used by this library.
 - `InvalidateAuthorizeCodeSession(ctx context.Context, code string) (err error)` has been introduced.
-- The error `github.com/ory/fosite/handler/oauth2.ErrInvalidatedAuthorizeCode` has been added.
+- The error `github.com/ernstbe/fosite/handler/oauth2.ErrInvalidatedAuthorizeCode` has been added.
 
 The following documentation sheds light on how you should update your storage adapter:
 
@@ -181,7 +181,7 @@ implementations. For this reason, `RevealDebugPayloads` defaults to false. Keep 
 very helpful when specific OAuth 2.0 requests fail and we generally recommend displaying debug information.
 
 Additionally, error keys for JSON changed which caused a new minor version, speicifically
-[`statusCode` was changed to `status_code`](https://github.com/ory/fosite/pull/242/files#diff-dd25e0e0a594c3f3592c1c717039b85eR221).
+[`statusCode` was changed to `status_code`](https://github.com/ernstbe/fosite/pull/242/files#diff-dd25e0e0a594c3f3592c1c717039b85eR221).
 
 
 ## 0.15.0
@@ -252,11 +252,11 @@ will increase iterations per line during tests and reduce annoying mock updates.
 
 #### WildcardScopeStrategy
 
-A new [scope strategy](https://github.com/ory/fosite/pull/187) was introduced called `WildcardScopeStrategy`. This strategy is now the default when using
+A new [scope strategy](https://github.com/ernstbe/fosite/pull/187) was introduced called `WildcardScopeStrategy`. This strategy is now the default when using
 the composer. To set the HierarchicScopeStrategy strategy, do:
 
 ```
-import "github.com/ory/fosite/compose"
+import "github.com/ernstbe/fosite/compose"
 
 var config = &compose.Config{
     ScopeStrategy: fosite.HierarchicScopeStrategy,
@@ -325,13 +325,13 @@ package compose
 
 This patch addresses some inconsistencies in the public interfaces. Also
 remaining references to the old repository location at `ory-am/fosite` 
-where updated to `ory/fosite`.
+where updated to `ernstbe/fosite`.
 
 ### Breaking changes
 
 #### `ClientManager`
 
-The [`ClientManager`](https://github.com/ory/fosite/blob/master/client_manager.go) interface
+The [`ClientManager`](https://github.com/ernstbe/fosite/blob/master/client_manager.go) interface
 changed, as a context parameter was added:
 
 ```go
@@ -345,7 +345,7 @@ type ClientManager interface {
 
 #### `OAuth2Provider`
 
-The [OAuth2Provider](https://github.com/ory/fosite/blob/master/oauth2.go) interface changed,
+The [OAuth2Provider](https://github.com/ernstbe/fosite/blob/master/oauth2.go) interface changed,
 as the need for passing down `*http.Request` was removed. This is justifiable
 because `NewAuthorizeRequest` and `NewAccessRequest` already contain `*http.Request`.
 
@@ -365,7 +365,7 @@ The public api of those two methods changed:
 Breaking changes:
 
 * Replaced `"golang.org/x/net/context"` with `"context"`.
-* Move the repo from `github.com/ory-am/fosite` to `github.com/ory/fosite`
+* Move the repo from `github.com/ory-am/fosite` to `github.com/ernstbe/fosite`
 
 ## 0.6.0
 

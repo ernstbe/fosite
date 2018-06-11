@@ -24,7 +24,7 @@ package pkce
 import (
 	"context"
 
-	"github.com/ory/fosite"
+	"github.com/ernstbe/fosite"
 )
 
 type PKCERequestStorage interface {

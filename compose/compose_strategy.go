@@ -24,10 +24,10 @@ package compose
 import (
 	"crypto/rsa"
 
-	"github.com/ory/fosite/handler/oauth2"
-	"github.com/ory/fosite/handler/openid"
-	"github.com/ory/fosite/token/hmac"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/ernstbe/fosite/handler/oauth2"
+	"github.com/ernstbe/fosite/handler/openid"
+	"github.com/ernstbe/fosite/token/hmac"
+	"github.com/ernstbe/fosite/token/jwt"
 )
 
 type CommonStrategy struct {

@@ -28,8 +28,8 @@ import (
 	"context"
 
 	jwtx "github.com/dgrijalva/jwt-go"
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/token/jwt"
 	"github.com/pkg/errors"
 )
 

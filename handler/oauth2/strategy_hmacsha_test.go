@@ -28,8 +28,8 @@ import (
 
 	"fmt"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/hmac"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/token/hmac"
 	"github.com/stretchr/testify/assert"
 )
 

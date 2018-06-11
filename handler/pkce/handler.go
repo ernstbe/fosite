@@ -26,8 +26,8 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/handler/oauth2"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/handler/oauth2"
 	"github.com/pkg/errors"
 )
 

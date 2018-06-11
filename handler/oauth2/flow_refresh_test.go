@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/storage"
+	"github.com/ernstbe/fosite"
+	"github.com/ernstbe/fosite/storage"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

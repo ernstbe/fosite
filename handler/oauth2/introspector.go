@@ -26,7 +26,7 @@ import (
 
 	"fmt"
 
-	"github.com/ory/fosite"
+	"github.com/ernstbe/fosite"
 	"github.com/pkg/errors"
 )
 

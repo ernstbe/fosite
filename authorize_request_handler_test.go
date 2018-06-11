@@ -31,8 +31,8 @@ import (
 	"fmt"
 
 	"github.com/golang/mock/gomock"
-	. "github.com/ory/fosite"
-	. "github.com/ory/fosite/internal"
+	. "github.com/ernstbe/fosite"
+	. "github.com/ernstbe/fosite/internal"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

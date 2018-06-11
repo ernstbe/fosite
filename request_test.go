@@ -25,8 +25,7 @@ import (
 	"net/url"
 	"testing"
 	"time"
-
-	. "github.com/ory/fosite"
+	. "github.com/ernstbe/fosite"
 	"github.com/stretchr/testify/assert"
 )
 

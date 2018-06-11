@@ -27,7 +27,7 @@ import (
 
 	"time"
 
-	"github.com/ory/fosite/internal"
+	"github.com/ernstbe/fosite/internal"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
